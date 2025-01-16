@@ -2,7 +2,6 @@ let listaDeNumerosSorteados = [];
 let numeroLimite = 10;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
-console.log(numeroSecreto);
 mensagemInicial();
 
 function gerarNumeroAleatorio(){ //funcao sem parametro COM RETORNO
@@ -18,7 +17,6 @@ function gerarNumeroAleatorio(){ //funcao sem parametro COM RETORNO
     }
     else{
         listaDeNumerosSorteados.push(numeroEscolhido);
-        console.log(listaDeNumerosSorteados);
         return numeroEscolhido;
     }
 }
@@ -70,7 +68,6 @@ function verificarChute(){//funcao sem parametro
 
 function reiniciarJogo(){
     numeroSecreto = gerarNumeroAleatorio();
-    console.log(numeroSecreto);
     limparCampo();
     tentativas = 1;
     mensagemInicial();
